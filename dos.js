@@ -57,14 +57,14 @@ for( let i = 0; i < 8; i++)
     {
         acumPositivos+= resultado;
         contPositivos++;
-        porcentajePositivos = parseFloat((acumPositivos / contPositivos) * 100);
+        porcentajePositivos = (acumPositivos / contPositivos) * 100;
     }
 
     else if(resultado == "negativo")
     {
         acumNegativos+= resultado;
         contNegativos++;
-        porcentajeNegativos = parseFloat((acumNegativos / contNegativos) * 100);
+        porcentajeNegativos = (acumNegativos / contNegativos) * 100;
     }
 
     if(cepa == "alfa")

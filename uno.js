@@ -17,8 +17,7 @@ let vacunaMMasEdad;
 let mujerMasEdad;
 let contMayorDeEdad = 0;
 let porcentajeMayores;
-let porcentajeDosDosis;
-let vacunaMenosInoculada;
+let porcentajeDosDosis;;
 let seguir;
 let flag = 1;
 
@@ -63,7 +62,7 @@ do
 	{
 		acumRusa += edad;
 		contRusa++;
-		promedioRusa = parseFloat(acumRusa / contRusa);
+		promedioRusa = acumRusa / contRusa;
 	}
 
 	if(flag || sexo == "f" && edad > mujerMasEdad)
@@ -79,7 +78,7 @@ do
 		contMayorDeEdad++;
 		contAmericana++;
 
-		porcentajeMayores = parseFloat((contMayordeEdad / contAmericana) * 100);
+		porcentajeMayores = (contMayordeEdad * 100) / contAmericana;
 
 	}
 
@@ -91,7 +90,7 @@ do
 	else if(dosis == "s")
 	{
 		contDosDosis++;
-		porcentajeDosDosis = parseFloat((contTotalVacunados / contDosDosis) * 100);
+		porcentajeDosDosis = (contDosDosis * 100) / contTotalVacunados;
 	}
 
 
